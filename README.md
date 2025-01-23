@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in Swift's handling of the `map` function when applied to an empty array.  The `map` function silently returns an empty array instead of signaling an error or exception. This behavior can lead to unexpected results and difficult-to-debug issues if not accounted for in your code.
+
+The `bug.swift` file illustrates the problem. The `bugSolution.swift` file offers a solution by explicitly checking for empty arrays before applying the `map` function, preventing silent failures and improving code robustness.
